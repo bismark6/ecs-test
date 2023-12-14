@@ -23,7 +23,6 @@
     "taskRoleArn": "arn:aws:iam::287350188447:role/ecsTaskExecutionRole",
     "executionRoleArn": "arn:aws:iam::287350188447:role/ecsTaskExecutionRole",
     "networkMode": "awsvpc",
-    "revision": 6,
     "volumes": [],
     "status": "ACTIVE",
     "requiresAttributes": [
