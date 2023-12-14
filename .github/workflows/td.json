@@ -55,8 +55,5 @@
     "runtimePlatform": {
         "cpuArchitecture": "X86_64",
         "operatingSystemFamily": "LINUX"
-    },
-    "registeredAt": "2023-12-14T18:48:04.732Z",
-    "registeredBy": "arn:aws:iam::287350188447:user/stbismark",
-    "tags": []
+    }
 }
