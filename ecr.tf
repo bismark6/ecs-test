@@ -1,4 +1,4 @@
-resource "aws_ecr_repository" "ecr_repo" {
+resource "aws_ecr_repository" "app" {
   name                 = "ecr_test"
   image_tag_mutability = "IMMUTABLE"
   image_scanning_configuration {
