@@ -51,33 +51,3 @@ resource "aws_ecs_task_definition" "td" {
   execution_role_arn = "arn:aws:iam::287350188447:role/ecsTaskExecutionRole"
 }
 
-resource "aws_ecs_task_definition" "td2" {
-  family                   = "uat"
-  container_definitions = jsonencode([
-    {
-      name         = "uat3"
-      image        = "287350188447.dkr.ecr.us-east-1.amazonaws.com/app_repo"
-      cpu          = 256
-      memory       = 512
-      essential    = true
-      portMappings = [
-        {
-          containerPort = 443
-          hostPort      = 443
-          protocol      = "tcp"
-        }
-      ]
-    }
-  ])
-  runtime_platform {
-    cpu_architecture = "X86_64"
-    operating_system_family = "LINUX"
-  }
-  requires_compatibilities = ["FARGATE"]
-
-  cpu                = "256"
-  memory             = "512"
-  network_mode       = "awsvpc"
-  task_role_arn      = "arn:aws:iam::287350188447:role/ecsTaskExecutionRole"
-  execution_role_arn = "arn:aws:iam::287350188447:role/ecsTaskExecutionRole"
-}
