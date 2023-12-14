@@ -4,7 +4,7 @@ on:
     branches:
       - master
 env:
-  AWS_REGION: us-east-1
+  AWS_REGION: us-east-2
   ECS_CLUSTER: app_cluster
   CONTAINER_NAME: app
   ECS_SERVICE: app_service
@@ -33,7 +33,7 @@ jobs:
       - name: Build, tag, and push image to Amazon ECR
         id: build-image
         env:
-          ECR_REGISTRY: "287350188447.dkr.ecr.us-east-1.amazonaws.com"
+          ECR_REGISTRY: "287350188447.dkr.ecr.us-east-1.amazonaws.com
           ECR_REPOSITORY: "app_repo"
           IMAGE_TAG: latest
         run: |
