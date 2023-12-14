@@ -182,8 +182,3 @@ resource "aws_route_table" "rt-private" {
             Name = "private-test"
 }
 }
-
-resource "aws_flow_log" "example" {
-  traffic_type    = "ALL"
-  vpc_id          = aws_vpc.vpc.id
-}
