@@ -50,4 +50,3 @@ resource "aws_ecs_task_definition" "td" {
   task_role_arn      = "arn:aws:iam::287350188447:role/ecsTaskExecutionRole"
   execution_role_arn = "arn:aws:iam::287350188447:role/ecsTaskExecutionRole"
 }
-
