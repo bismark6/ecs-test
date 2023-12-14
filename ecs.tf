@@ -25,7 +25,7 @@ resource "aws_ecs_task_definition" "td" {
   container_definitions = jsonencode([
     {
       name         = "prod"
-      image        = "287350188447.dkr.ecr.us-east-1.amazonaws.com/ecr_repo"
+      image        = "287350188447.dkr.ecr.us-east-1.amazonaws.com/app_repo"
       cpu          = 256
       memory       = 512
       essential    = true
@@ -56,7 +56,7 @@ resource "aws_ecs_task_definition" "td2" {
   container_definitions = jsonencode([
     {
       name         = "uat3"
-      image        = "287350188447.dkr.ecr.us-east-1.amazonaws.com/ecr_repo"
+      image        = "287350188447.dkr.ecr.us-east-1.amazonaws.com/app_repo"
       cpu          = 256
       memory       = 512
       essential    = true
