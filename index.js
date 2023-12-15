@@ -6,4 +6,4 @@ app.get('/', function (req, res){
     res.send("Hello World 2");
 });
 
-app.listen(80);
+app.listen(80, () => console.log('server ready'))
