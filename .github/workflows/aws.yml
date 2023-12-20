@@ -3,7 +3,7 @@ on:
   push:
     branches:
       - master
-input:
+inputs:
   AWS_REGION: us-east-1
     Description: Aws Region
   ECS_CLUSTER: app_cluster
