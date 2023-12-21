@@ -1,5 +1,7 @@
 FROM node:16-alpine
 
+RUN apk -U add --no-cache \
+
 WORKDIR /app
 
 COPY package*.json ./
