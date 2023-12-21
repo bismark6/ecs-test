@@ -1,7 +1,11 @@
+# coverage
 terraform.tfstate
 terraform.tfstate.backup
 .terraform.lock.hcl
 .terraform/
 
-dependencies
+# dependencies
 /node_modules
+
+# misc
+.DS_Store
