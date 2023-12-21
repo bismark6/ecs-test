@@ -1,7 +1,0 @@
-terraform.tfstate
-terraform.tfstate.backup
-.terraform.lock.hcl
-.terraform/
-
-dependencies
-/node_modules
