@@ -1,6 +1,6 @@
 FROM node:16-alpine
 
-RUN apk -U add --no-cache \
+RUN apk -U add --no-cache 
 
 WORKDIR /app
 
