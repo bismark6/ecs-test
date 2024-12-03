@@ -11,4 +11,3 @@ app.listen(80, () => console.log('server ready'))
 
 TextDecoderStream
 
-res
