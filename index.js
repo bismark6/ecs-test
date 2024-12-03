@@ -1,4 +1,5 @@
 const express = require('express');
+const res = require('express/lib/response');
 
 const app = express();
 
@@ -7,3 +8,7 @@ app.get('/', function (req, res){
 });
 
 app.listen(80, () => console.log('server ready'))
+
+TextDecoderStream
+
+res
